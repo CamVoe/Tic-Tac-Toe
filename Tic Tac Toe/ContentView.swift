@@ -1,24 +1,17 @@
-//
-//  ContentView.swift
-//  Tic Tac Toe
-//
-//  Created by Cameron Voelpel on 11/20/26.
-//
-
 import SwiftUI
-
 struct ContentView: View {
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            Text("Tic Tac Toe")
+                .bold()
+            LazyVGrid(columns: Array(repeating: GridItem(.fixed(120)), count: 3)) {
+                Text("Placeholder")
+                Text("Placeholder")
+            }
         }
-        .padding()
+        .preferredColorScheme(.dark)
     }
 }
-
 #Preview {
     ContentView()
 }
